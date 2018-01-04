@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # some parameters
-HOME_DIR=/home/hhajian/bookmark
-COMMAND_FILE=$HOME_DIR/commands.yml
+HOME_DIR=$HOME/.bookmark
+COMMAND_FILE=$HOME/.bookmark/commands.yml
 
 
 function add_command
@@ -83,7 +83,6 @@ case $1 in
     ;;
 
   *|-h|--help)
-#    echo "usage: --add , --commit"
     printf "\nUsage: \n\t -a|--add        # Add command to bookmark list. This option accept two arguments: \"Compelete command line\" and \"Description of the command\"
 		     \n\t -c|--commit     # Commit local changes to repository
 		     \n\t -s|--search     # Search for a command. This option accepts one argument: \"Command to be looked up\"
